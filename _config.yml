@@ -1,6 +1,6 @@
 # Site settings
 title: Yeats does not rhyme with Keats
-email: Who's asking?
+email: pjdmatts@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   An notebook to act as a place to collect not totally useless things
 baseurl: "" # the subpath of your site, e.g. /blog/
