@@ -7,14 +7,14 @@ categories: learning programming
 
 ##Things To Do: Borrowing from Josh Kemp##
 
-  - [X] Pick a language to learn
-  - [X] Start a blog
-  - [X] Start a twitter account
+  - [x] Pick a language to learn
+  - [x] Start a blog
+  - [x] Start a twitter account
   - [ ] Join meetups
-  - [X] Get environment set up
-  - [X] Get a decent text editor
+  - [x] Get environment set up
+  - [x] Get a decent text editor
   - [ ] Learn The Command Line The Hard Way
-  - [X] Chris Pine: Learn To Program
+  - [x] Chris Pine: Learn To Program
   - [ ] One Month Rails
   - [ ] Learn Ruby The Hard Way
   - [ ] Make an app, get it online, sort DNS
