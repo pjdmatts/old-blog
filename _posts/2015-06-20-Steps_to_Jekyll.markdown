@@ -5,7 +5,7 @@ date:   2015-06-20 19:44:00
 categories: jekyll blogging
 ---
 
-##Recipe for getting started with Jekyll##
+A Recipe for getting started with Jekyll
 
 ###Ingredients:###
 
