@@ -2,7 +2,7 @@
 layout: post
 title:  "Why Am I Coding?"
 date:   2015-07-12 12:00:00
-categories: coding learning
+categories: coding
 ---
 
 The world is full of people learning to code, or at least it seems that way. It could also be that to someone learning to code it looks like everyone is learning to code, because their world now consists to a large part of people who either can code or are learning to.

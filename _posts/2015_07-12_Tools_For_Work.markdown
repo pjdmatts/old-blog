@@ -2,7 +2,7 @@
 layout: post
 title:  "Tools For Work"
 date:   2015-07-12 13:00:00
-categories: coding projects
+categories: projects
 ---
 
 A running list of tools I need built at work and am either trying to find or to build myself.
