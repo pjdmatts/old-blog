@@ -139,22 +139,22 @@ An Action is a method inside a controller - Actions are the parts of the control
 
 In the step where we called generate to create our controller we also specify which action(s) we want to be created. Actions start out simple after running generate:
 
-```
+{% highlight ruby %}
 class TravellersController < ApplicationController
   def index
   end
 end
-```
+{% endhighlight %}
 
 And we can add additional functionality to them:
 
-```
+{% highlight ruby %}
 class TravellersController < ApplicationController
   def index
     @travellers = Traveller.all
   end
 end
-```
+{% endhighlight %}
 
 In this example we have found all of the travellers in the database (with Traveller.all) and assigned them to the *instance variable* @travellers.
 
