@@ -97,9 +97,9 @@ resources :travellers
 
 in the routes.rb file creates seven different RESTful routes in the application, all mapping to actions in the travellers controller:
 
-HTTP Verb  | Path| Controller#Action| Used for (CRUD operation)
-:---| :---- | :---- | :----
-GET  | /travellers| travellers#index | display a list of all travellers (Read)
+HTTP Verb| Path       | Controller#Action| Used for (CRUD operation) |
+:------- | :--------- | :--------------- | :------------------------ |
+GET      | /travellers| travellers#index | display a list of all travellers (Read)
 GET | /travellers/new | travellers#new | return an HTML form for creating new travellers (Create)
 POST | /travellers | travellers#create | create a new traveller (Create)
 GET | /travellers/:id | travellers#show | display a specific traveller (Read)
@@ -113,23 +113,57 @@ This single entry in the routing file takes care of the majority of the routes y
 
 ###What is a Controller?###
 
+In an earlier analogy the route is a map telling arriving travellers which immigration desk to go to. Extending the analogy we can think of the Controller as the officer at the desk that greats each traveller (browser request) after the map (the router) has sent them there. The Officer takes the travellers credentials (the parameters, if any, in the URL) and can look things up (by asking questions of the Model). 
+
+The Controller understands what the router has sent it and knows how to look things up in the Model (but the Model does the application logic 'work' behind the scenes). Depending on what the Model responds with the Controller knows with Views to render (but the Views does the HTML 'work' behind the scenes). 
+
+Hopefully if the request and the parameters check out the Controller stamps the passport and the nervous traveller gets to go on their way...
 
 
 ###How to make a Controller###
 
+To create a new controller, you need to run the "controller" generator and tell it you want a controller called "travellers" with an action named "index", like so:
+
+```
+$ bin/rails generate controller travellers index
+```
+
+Names matter in Rails, which makes certain assumptions about what you are going to do in order to help get things running. In this instance Rails assumes that you are going to give controllers and actions the same names you do in the routing file.
 
 
 ###What is an Action?###
 
-
+An Action is a method inside a controller - Actions are the parts of the controller that 'do' things. For example there might be a 'stamp_passport' Action and a 'pull_to_one_side_for_search' Action, but usually you will see Actions that correspond to CRUD operations such as 'index' and 'destroy'. 
 
 ###How to make an Action###
 
+In the step where we called generate to create our controller we also specify which action(s) we want to be created. Actions start out simple after running generate:
 
+```
+class TravellersController < ApplicationController
+  def index
+  end
+end
+```
 
+And we can add additional functionality to them:
 
+```
+class TravellersController < ApplicationController
+  def index
+    @travellers = Traveller.all
+  end
+end
+```
 
+In this example we have found all of the travellers in the database (with Traveller.all) and assigned them to the *instance variable* @travellers.
 
+###Wrapping Up###
 
+Routes, Controllers and Actions are key building blocks in a Rails application. This short introduction has only just scratched the surface. Now that you have some of the concepts aligned a good place to go next is to read the specific sections for these aspects of Rails in the Rails Guides:
+
+[Routing](http://guides.rubyonrails.org/routing.html)
+
+[Controllers and Actions](http://guides.rubyonrails.org/action_controller_overview.html)
 
 
