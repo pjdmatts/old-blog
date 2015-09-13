@@ -11,11 +11,11 @@ First we will *do* some creating, and then we can step back and think about what
 
 Go to a safe place in the terminal, a folder where you don't mind making a mess or leaving half built starter projects laying around, and do this:
 
-```
+```Shell
 $ rails new create_route_controller_action
 ```
 
-```
+```Shell
 $ cd create_route_controller_action
 ```
 
