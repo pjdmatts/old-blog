@@ -165,5 +165,3 @@ Routes, Controllers and Actions are key building blocks in a Rails application. 
 [Routing](http://guides.rubyonrails.org/routing.html)
 
 [Controllers and Actions](http://guides.rubyonrails.org/action_controller_overview.html)
-
-
