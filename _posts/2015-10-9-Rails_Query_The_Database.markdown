@@ -36,7 +36,12 @@ end
 In short, here is how to query the database with Rails:
 
 1, Make a controller
+
 2, Make an action inside that controller
+
 3, Within the action call query methods on the objects in the Model.
+
 4, If things get complicated move the logic into the Model (e.g. by using scopes).
+
+
 
