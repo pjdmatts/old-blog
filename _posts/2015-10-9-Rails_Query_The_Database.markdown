@@ -19,27 +19,21 @@ Here are some more examples of queries that start in the controller. These ones 
 
 In the first example the Index action in the Pins Controller is going and getting all of the pins for us (thats the Pin.all part. Additional methods are called to set the order in which the results are returned and to paginate the results):
 
-```
+{% highlight ruby %}
 def index
-
     @pins = Pin.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 8)
-    
 end
-```
-
-```
+{% endhighlight %}
 
 In the second example a private method called set_pin is searching for one specific pin (identified by the parameters set in the url):
 
-```
+{% highlight ruby %}
 def set_pin
-
-      @pin = Pin.find_by(id: params[:id])
-
+    @pin = Pin.find_by(id: params[:id])
 end
-```
+{% endhighlight %}
 
-In short, here is how to query the database:
+In short, here is how to query the database with Rails:
 
 1, Make a controller
 2, Make an action inside that controller
