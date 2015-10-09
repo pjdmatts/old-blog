@@ -18,9 +18,12 @@ Say we needed an array containing the titles of all the blog posts, we can simpl
 Here are some more examples of queries that start in the controller. These ones are taken from my ‘Pinteresting’ [repo](https://github.com/pjdmatts/pinteresting) (I recently completed the One Month Rails course and this is what Mattan has you build).
 
 In the first example the Index action in the Pins Controller is going and getting all of the pins for us (thats the Pin.all part. Additional methods are called to set the order in which the results are returned and to paginate the results):
+
 ```
 def index
+
     @pins = Pin.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 8)
+    
 end
 ```
 
@@ -30,7 +33,9 @@ In the second example a private method called set_pin is searching for one speci
 
 ```
 def set_pin
+
       @pin = Pin.find_by(id: params[:id])
+
 end
 ```
 
