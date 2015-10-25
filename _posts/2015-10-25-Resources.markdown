@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Rails: Query The Database"
-date:   2015-10-09 12:24:00
-categories: coding
+title:  "Rails: Learning Resources"
+date:   2015-10-25 18:33:00
+categories: learning
 ---
 
 This is a collection of resources I have found useful so far. More of an aide-memoire than a comprehensive list, but hopefully some of these will be useful to you too.
