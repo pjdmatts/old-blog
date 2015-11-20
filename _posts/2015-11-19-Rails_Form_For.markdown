@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Rails: Form-For"
-date:   2015-11-19 15:33:00
+date:   2015-11-18 15:33:00
 categories: coding
 ---
 
