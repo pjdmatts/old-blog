@@ -20,3 +20,7 @@ To use the form_for tag you pass in the model object (the table you want to acce
     <%= f.submit “Create” %>
 <% end %>
 {% endhighlight %}
+
+Working with the form_tag method is a bit more involved, because you need to specify the path that you will be working with and the method to use.
+
+I have not figured out a good example for form_tag yet - more on this later.
